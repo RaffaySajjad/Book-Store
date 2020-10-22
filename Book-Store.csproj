@@ -5,4 +5,7 @@
     <RootNamespace>Book_Store</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
 </Project>
