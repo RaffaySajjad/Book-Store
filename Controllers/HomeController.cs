@@ -2,14 +2,23 @@
 using Microsoft.AspNetCore.Mvc;
 namespace Book_Store.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : Controller //Inherits Controller
     {
         public HomeController()
         {
         }
-        public string Index()
+        public ViewResult Index()
         {
-            return "Book Store";
+            return View();
+        }
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+
+        public ViewResult ContactUs()
+        {
+            return View();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Book_Store
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-        }
+          }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -27,8 +27,10 @@ namespace Book_Store
                 app.UseDeveloperExceptionPage();
             }
 
+            //Enable middleware
             app.UseRouting();
 
+            //Middleware 1
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
