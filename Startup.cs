@@ -27,18 +27,15 @@ namespace Book_Store
                 app.UseDeveloperExceptionPage();
             }
 
-            //Enable middleware
+            //Enabling middlewares
             app.UseRouting();
 
-            //Middleware 1
+            app.UseStaticFiles();
+
+            //Middleware
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
-
-                /*endpoints.Map("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello from " + env.EnvironmentName);
-                });*/
             });
         }
     }

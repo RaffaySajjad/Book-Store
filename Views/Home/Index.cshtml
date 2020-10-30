@@ -1,18 +1,36 @@
-﻿
+﻿<!--Server sided code-->
 @{
     Layout = null;
 }
-
+<!--HTML Syntax-->
 <!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>AboutUs</title>
+    <link href="~/css/logo.css" rel="stylesheet" />
 </head>
 <body>
+
+    <img src="~/images/logo.png" class="logo" alt="logo"/>
+
     <h1>Welcome to Book Store Application</h1>
     <p>This is the home page</p>
+
+    @{
+        var a = 5;
+    }
+
+    @if(a == 5)
+    {
+        <h1>A is @a</h1>
+    }
+    else
+    {
+        <h1>A isn't 5 :(</h1>
+    }
+
 </body>
 </html>
 
