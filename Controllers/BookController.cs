@@ -17,9 +17,9 @@ namespace Book_Store.Controllers
             bookRepository = new BookRepository();
         }
         public ViewResult GetAllBooks()
-        {
+        { 
             var data = bookRepository.GetAllBooks();
-            return View();
+            return View(data);
         }
 
         public BookModel GetBookById(int id)  
