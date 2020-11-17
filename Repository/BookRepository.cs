@@ -24,15 +24,15 @@ namespace Book_Store.Repository
         {
             return new List<BookModel>
             {
-                new BookModel(){Id=1, Author="Elif Shafaq", Title="Forty Rules of Love", Description="The pursuit for God"},
-                new BookModel(){Id=2, Author="Stephen Hawkings", Title="The Grand Design", Description="Scientific view of the creation of universe"},
-                new BookModel(){Id=3, Author="Raffay Sajjad", Title="MVC", Description="Basics of Model View Controller, Design Hierarchy"},
-                new BookModel(){Id=4, Author="Author", Title="ASP.Net", Description="Web Development using modern web tools"},
-                new BookModel(){Id=5, Author="Hassan", Title="Cloud Computing", Description="A dive into new computing field"},
-                new BookModel(){Id=5, Author="Muddassir", Title="Microsoft Azure", Description="Expand you business capabilities with leveraging Microsoft's servers"},
-                new BookModel(){Id=5, Author="Raffay Sajjad", Title="Microsoft SQL", Description="Get to know one of the most popular RDBMS"},
-                new BookModel(){Id=5, Author="Abeya", Title="Xcode", Description="Unlock the capabilities of Apple's ecosystem"},
-                new BookModel(){Id=5, Author="Mahnoor", Title="Swift", Description="Make apps for macOS, iOS, tvOS, watchOS"}
+                new BookModel(){Id=1, Author="Elif Shafaq", Title="Forty Rules of Love", Description="The pursuit for God", Category="Literary fiction", Language="English", TotalPages=168 },
+                new BookModel(){Id=2, Author="Stephen Hawkings", Title="The Grand Design", Description="Scientific view of the creation of universe", Category="Science", Language="English", TotalPages=750},
+                new BookModel(){Id=3, Author="Raffay Sajjad", Title="MVC", Description="A modern design hierarchy", Category="Programming", Language="English", TotalPages=110},
+                new BookModel(){Id=4, Author="Author", Title="ASP.Net", Description="Web Development using modern web tools", Category="Programming", Language="English", TotalPages=240},
+                new BookModel(){Id=5, Author="Hassan", Title="Cloud Computing", Description="Leverage the power of cloud for a global outreach", Category="Programming", Language="English", TotalPages=350},
+                new BookModel(){Id=6, Author="Muddassir", Title="Microsoft Azure", Description="Expand you business capabilities by leveraging Microsoft's servers", Category="Computer Science", Language="English", TotalPages=475},
+                new BookModel(){Id=7, Author="Raffay Sajjad", Title="Microsoft SQL", Description="Get to know one of the most popular RDBMS", Category="Databases", Language="English", TotalPages=150},
+                new BookModel(){Id=8, Author="Abeya", Title="Xcode", Description="Unlock the capabilities of Apple's ecosystem", Category="Programming", Language="English", TotalPages=240},
+                new BookModel(){Id=9, Author="Mahnoor", Title="Swift", Description="Make apps for macOS, iOS, tvOS, watchOS", Category="Programming", Language="English", TotalPages=245}
             };
         }
     }
