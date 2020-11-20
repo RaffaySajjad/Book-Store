@@ -25,7 +25,7 @@ namespace Book_Store.Repository
             return new List<BookModel>
             {
                 new BookModel(){Id=1, Author="Elif Shafaq", Title="Forty Rules of Love", Description="The pursuit for God", Category="Literary fiction", Language="English", TotalPages=168 },
-                new BookModel(){Id=2, Author="Stephen Hawkings", Title="The Grand Design", Description="Scientific view of the creation of universe", Category="Science", Language="English", TotalPages=750},
+                new BookModel(){Id=2, Author="Stephen Hawkings", Title="The Grand Design", Description="Scientific view on the creation of universe", Category="Science", Language="English", TotalPages=750},
                 new BookModel(){Id=3, Author="Raffay Sajjad", Title="MVC", Description="A modern design hierarchy", Category="Programming", Language="English", TotalPages=110},
                 new BookModel(){Id=4, Author="Author", Title="ASP.Net", Description="Web Development using modern web tools", Category="Programming", Language="English", TotalPages=240},
                 new BookModel(){Id=5, Author="Hassan", Title="Cloud Computing", Description="Leverage the power of cloud for a global outreach", Category="Programming", Language="English", TotalPages=350},

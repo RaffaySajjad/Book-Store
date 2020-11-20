@@ -1,5 +1,8 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using System.Dynamic;
+using Book_Store.Models;
+
 namespace Book_Store.Controllers
 {
     public class HomeController : Controller //Inherits Controller
@@ -15,7 +18,6 @@ namespace Book_Store.Controllers
         {
             return View();
         }
-
         public ViewResult ContactUs()
         {
             return View();
