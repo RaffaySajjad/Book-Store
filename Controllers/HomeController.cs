@@ -10,14 +10,19 @@ namespace Book_Store.Controllers
         public HomeController()
         {
         }
+
         public ViewResult Index()
         {
             return View();
         }
+
+        [Route("aboutUs")]
         public ViewResult AboutUs()
         {
             return View();
         }
+
+        [Route("contactUs")]
         public ViewResult ContactUs()
         {
             return View();

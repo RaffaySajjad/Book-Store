@@ -1,11 +1,11 @@
-﻿@model IEnumerable<BookModel>
+﻿@*model IEnumerable<BookModel>*@
 
 @{
     ViewData["Title"] = "Stock";
 }
 
 <div class="container">
-    <h3 class="h3">Book Stock</h3>
+    <h3 class="h2">Book Stock</h3>
     <div class="row">
         @foreach (var book in Model)
         {
@@ -22,7 +22,7 @@
                         <p class=" card-text">@book.Description</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/book/getbookbyid/@book.Id" class="btn btn-sm btn-outline-secondary">View details</a>
+                                <a asp-route="GetBookByIdRoute" asp-route-id="@book.Id" class="btn btn-sm btn-outline-secondary">View details</a>
                             </div>
                             <small class="text-muted">@book.Author</small>
                         </div>

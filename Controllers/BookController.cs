@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 using Book_Store.Models;
@@ -16,15 +17,26 @@ namespace Book_Store.Controllers
         {
             bookRepository = new BookRepository();
         }
+
+        [Route("stock", Name = "GetBooks")]
         public ViewResult GetAllBooks()
         { 
             var stock = bookRepository.GetAllBooks();
             return View(stock);
         }
 
+        [Route("explore/{id}",Name = "GetBookByIdRoute")]
         public ViewResult GetBookById(int id)  
         {
+            //Simple object
             var bookDetails = bookRepository.GetBookById(id);
+
+            //Anonymous object
+            dynamic data = new ExpandoObject();
+
+            data.book = bookDetails;
+            data.Test = "Test sample data";
+
             return View(bookDetails);
         }
         public List<BookModel> SearchBook(string bookName, string authorName)
