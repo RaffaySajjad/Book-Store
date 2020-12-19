@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Book_Store.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -17,7 +19,9 @@ namespace Book_Store
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            
+
+            services.AddDbContext<BookStoreContext>(options => options.UseSqlServer("Server=.;Database=BookStore;User ID=sa;password=123ASD456ZXC5a"));
+
             #if DEBUG
                 services.AddRazorPages().AddRazorRuntimeCompilation();
             #endif
@@ -34,8 +38,6 @@ namespace Book_Store
             //Enabling middlewares
             app.UseRouting();
             app.UseStaticFiles();
-
-
 
             //Middleware
             app.UseEndpoints(endpoints =>
